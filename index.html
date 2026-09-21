@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal creative portfolio" />
+    <title>YOUR NAME — Creative Portfolio</title>
+    <link rel="preload" href="./public/assets/hero-sticker-light.svg" as="image" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css?v=footer-wangye3" />
+  </head>
+  <body>
+    <!--
+      DIRECTION CONTRACT
+      World: the supplied blue-and-white SWL composition, rebuilt in layered SVG rather than approximated as a new hero.
+      First view: paper texture, pale oversized SWL, central 3D sticker lettering, blue rails, editorial copy, and a SEE MORE action.
+      Path: SEE MORE moves directly to selected work; the other portfolio sections remain unchanged.
+      Signature interaction: only the dimensional sticker has a restrained vertical float; the fixed reference layout remains visually intact.
+      Constraint: no video, no navigation chrome, and no invented decorative elements in the first viewport.
+    -->
+    <a class="skip-link" href="#work">跳至作品区</a>
+
+    <main>
+      <section class="hero reference-hero" id="top" aria-label="首页">
+        <div class="reference-canvas">
+          <img class="hero-paper" src="./public/assets/wangye3.svg" alt="" aria-hidden="true" />
+          <img class="hero-nav-layer" src="./public/assets/hero-nav.svg" alt="首页、作品、技能、关于我" />
+          <a class="hero-nav-link hero-nav-home" href="#top" aria-label="跳转到首页"></a>
+          <a class="hero-nav-link hero-nav-work" href="#work" aria-label="跳转到作品区"></a>
+          <a class="hero-nav-link hero-nav-skills" href="#skills" aria-label="跳转到技能区"></a>
+          <a class="hero-nav-link hero-nav-about" href="#contact" aria-label="跳转到关于我区"></a>
+          <img class="hero-swl" src="./public/assets/wangye2.svg" alt="" aria-hidden="true" />
+          <img class="hero-date-layer" src="./public/assets/wangye4.svg" alt="2024 至 2026" />
+          <img class="hero-copy-layer" src="./public/assets/hero-copy-light.svg" alt="Welcome to my creative corner. It’s where creativity meets a flex, but, like, in the most humble way possible." />
+          <img class="hero-sticker" src="./public/assets/hero-sticker-light.svg" alt="蓝白立体字创意主视觉" />
+          <div class="hero-divider" aria-hidden="true"></div>
+          <a class="see-more" href="#work">SEE MORE <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="work work-entry" id="work" aria-label="作品">
+        <div class="work-showcase works-page-showcase">
+          <img class="work-showcase-paper" src="./public/assets/wangye3.svg" alt="" aria-hidden="true" />
+          <img class="work-showcase-title" src="./public/assets/works-title.svg?v=5c92e0" alt="MY WORKS" />
+          <div class="work-project-motion work-project-motion-expanded">
+            <div class="work-project-set">
+              <img class="work-showcase-art work-showcase-art-stitch" src="./public/assets/stitch.svg" alt="" aria-hidden="true" />
+              <img class="work-showcase-art work-showcase-art-pim" src="./public/assets/pim-pom.svg" alt="" aria-hidden="true" />
+              <img class="work-showcase-art work-showcase-art-miffy" src="./public/assets/miffy.svg" alt="" aria-hidden="true" />
+              <img class="work-showcase-art work-showcase-art-bottle" src="./public/assets/bottle.svg" alt="" aria-hidden="true" />
+              <img class="work-showcase-art work-showcase-art-hello-kitty" src="./public/assets/hello-kitty.svg" alt="" aria-hidden="true" />
+              <img class="work-showcase-art work-showcase-art-christmas" src="./public/assets/christmas.svg" alt="" aria-hidden="true" />
+
+              <a class="works-page-project works-page-project-stitch" href="./stitch.html" aria-label="查看 Stitch 项目详情"></a>
+              <a class="works-page-project works-page-project-pim" href="./pim-pom.html" aria-label="查看 Pim & Pom 项目详情"></a>
+              <a class="works-page-project works-page-project-miffy" href="./miffy.html" aria-label="查看 Miffy 项目详情"></a>
+              <a class="works-page-project works-page-project-bottle" href="./bottle.html" aria-label="查看水杯项目详情"></a>
+              <a class="works-page-project works-page-project-hello-kitty" href="./hello-kitty.html" aria-label="查看 Hello Kitty 项目详情"></a>
+              <a class="works-page-project works-page-project-christmas" href="./christmas.html" aria-label="查看 Christmas 项目详情"></a>
+            </div>
+            <div class="work-project-set work-project-set-clone" aria-hidden="true">
+              <img class="work-showcase-art work-showcase-art-stitch" src="./public/assets/stitch.svg" alt="" />
+              <img class="work-showcase-art work-showcase-art-pim" src="./public/assets/pim-pom.svg" alt="" />
+              <img class="work-showcase-art work-showcase-art-miffy" src="./public/assets/miffy.svg" alt="" />
+              <img class="work-showcase-art work-showcase-art-bottle" src="./public/assets/bottle.svg" alt="" />
+              <img class="work-showcase-art work-showcase-art-hello-kitty" src="./public/assets/hello-kitty.svg" alt="" />
+              <img class="work-showcase-art work-showcase-art-christmas" src="./public/assets/christmas.svg" alt="" />
+
+              <a class="works-page-project works-page-project-stitch" href="./stitch.html" tabindex="-1"></a>
+              <a class="works-page-project works-page-project-pim" href="./pim-pom.html" tabindex="-1"></a>
+              <a class="works-page-project works-page-project-miffy" href="./miffy.html" tabindex="-1"></a>
+              <a class="works-page-project works-page-project-bottle" href="./bottle.html" tabindex="-1"></a>
+              <a class="works-page-project works-page-project-hello-kitty" href="./hello-kitty.html" tabindex="-1"></a>
+              <a class="works-page-project works-page-project-christmas" href="./christmas.html" tabindex="-1"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-page section-shell" id="skills" aria-label="技能">
+        <img class="skills-paper" src="./public/assets/wangye3.svg" alt="" aria-hidden="true" />
+        <div class="skills-heading">
+          <p>SKILLS / TOOLKIT</p>
+        </div>
+
+        <div class="skill-cards" aria-label="能力范围">
+          <article class="skill-card skill-card-visual">
+            <div class="skill-card-top"><span>01</span><span>VISUAL DESIGN</span></div>
+            <div class="skill-card-display" aria-hidden="true"><b>P</b><b>S</b><b>A</b><b>i</b><b>F</b></div>
+            <div class="skill-card-copy">
+              <h4>平面视觉</h4>
+              <p>Photoshop · Illustrator · Figma</p>
+            </div>
+            <div class="skill-orbit skill-orbit-one" aria-hidden="true"></div>
+            <div class="skill-orbit skill-orbit-two" aria-hidden="true"></div>
+          </article>
+
+          <article class="skill-card skill-card-3d">
+            <div class="skill-card-top"><span>02</span><span>FORM &amp; SPACE</span></div>
+            <div class="skill-cube" aria-hidden="true"><i></i><i></i><i></i><strong>3D</strong></div>
+            <div class="skill-card-copy">
+              <h4>3D 建模</h4>
+              <p>Rhino · Cinema 4D</p>
+            </div>
+            <div class="skill-floor" aria-hidden="true"></div>
+          </article>
+
+          <article class="skill-card skill-card-ai">
+            <div class="skill-card-top"><span>03</span><span>AI WORKFLOW</span></div>
+            <div class="skill-terminal" aria-hidden="true"><span>&lt;/&gt;</span><b>AI</b><i></i></div>
+            <div class="skill-card-copy">
+              <h4>AI 创作能力</h4>
+              <p>ComfyUI 工作流 · Codex 前端 Vibe&nbsp;Coding</p>
+            </div>
+            <div class="skill-scan" aria-hidden="true"></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <p class="section-label">START A CONVERSATION</p>
+      <a class="footer-mail" href="mailto:1135589503@qq.com">1135589503@<br />qq.com <span aria-hidden="true">↗</span></a>
+      <div class="footer-bottom">
+        <p>YOUR NAME / CREATIVE STUDIO</p>
+        <div><a href="#top">BEHANCE</a><a href="#top">INSTAGRAM</a><a href="#top">LINKEDIN</a></div>
+        <p>© 2026</p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

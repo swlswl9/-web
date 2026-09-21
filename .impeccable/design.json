@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-03T00:00:00+08:00",
+  "title": "Design System: Your Wave Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "wave-blue": { "role": "primary", "displayName": "Wave Blue", "canonical": "#143d84", "tonalRamp": ["#061733", "#0b2855", "#143d84", "#2e5fae", "#5f88c9", "#9bb4dd", "#d3dff0", "#f3f6fb"] },
+      "ink": { "role": "neutral", "displayName": "Studio Ink", "canonical": "#101b35", "tonalRamp": ["#060a15", "#101b35", "#283858", "#526584", "#8090ab", "#b2bdce", "#dce2eb", "#f6f7fa"] },
+      "paper": { "role": "neutral", "displayName": "Cool Paper", "canonical": "#f6f5f0", "tonalRamp": ["#24231f", "#56554e", "#88877f", "#b7b5ab", "#d8d6cc", "#e9e8e1", "#f6f5f0", "#fffefa"] },
+      "signal-lime": { "role": "tertiary", "displayName": "Signal Lime", "canonical": "#dfff38", "tonalRamp": ["#263000", "#506400", "#7e9b00", "#aacd12", "#dfff38", "#e7ff68", "#efff9f", "#f8ffd5"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Poster Display", "purpose": "Hero headlines, service names, and the contact address." },
+      "body": { "displayName": "Quiet Body", "purpose": "Chinese paragraphs, metadata, and descriptions beside expressive display type." }
+    },
+    "shadows": [
+      { "name": "nav-lift", "value": "0 14px 34px rgba(20,61,132,.20)", "purpose": "Lift the blue navigation pill over the paper field." },
+      { "name": "sticker-lift", "value": "drop-shadow(0 2.1rem 1.25rem rgba(16,27,53,.28))", "purpose": "Give the supplied artwork physical separation from the video/paper field." }
+    ],
+    "motion": [
+      { "name": "studio-ease", "value": "cubic-bezier(.22, 1, .36, 1)", "purpose": "Entrance and hover easing." },
+      { "name": "sticker-bob", "value": "5s ease-in-out infinite", "purpose": "Slow ambient float for the hero artwork." }
+    ],
+    "breakpoints": [
+      { "name": "compact", "value": "760px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Contact Button",
+      "kind": "button",
+      "refersTo": "contact-button",
+      "description": "A compact paper pill that opens the contact path from the navigation.",
+      "html": "<a class=\"ds-contact\" href=\"#\">LET'S TALK <span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-contact { display:inline-flex; gap:.55rem; align-items:center; padding:.72rem 1.05rem; border-radius:999px; background:#f6f5f0; color:#143d84; font-family:Arial,sans-serif; font-size:.9rem; font-weight:900; letter-spacing:.06em; text-decoration:none; transition:transform .25s cubic-bezier(.22,1,.36,1),background .25s; } .ds-contact:hover { background:#dfff38; transform:rotate(-3deg) scale(1.03); } .ds-contact:focus-visible { outline:3px solid #dfff38; outline-offset:5px; }"
+    },
+    {
+      "name": "Skill Chip",
+      "kind": "chip",
+      "refersTo": "tool-chip",
+      "description": "An outlined informational tag used to list a design tool or practice.",
+      "html": "<span class=\"ds-chip\">Figma</span>",
+      "css": ".ds-chip { display:inline-block; padding:.6rem .85rem; border:1px solid #143d84; border-radius:999px; color:#143d84; font-family:Arial,sans-serif; font-size:.8rem; font-weight:700; }"
+    },
+    {
+      "name": "Navigation Link",
+      "kind": "nav",
+      "refersTo": "nav-shell",
+      "description": "A blue pill-navigation link with an acid underline reveal.",
+      "html": "<a class=\"ds-nav-link\" href=\"#\">作品</a>",
+      "css": ".ds-nav-link { position:relative; color:#f6f5f0; font-family:Arial,sans-serif; font-size:.9rem; font-weight:800; text-decoration:none; } .ds-nav-link::after { content:''; position:absolute; right:0; bottom:-.35rem; left:0; height:2px; background:#dfff38; transform:scaleX(0); transform-origin:right; transition:transform .25s cubic-bezier(.22,1,.36,1); } .ds-nav-link:hover::after { transform:scaleX(1); transform-origin:left; } .ds-nav-link:focus-visible { outline:3px solid #dfff38; outline-offset:5px; }"
+    },
+    {
+      "name": "Project Poster",
+      "kind": "card",
+      "refersTo": "project-surface",
+      "description": "A square, linked poster field for a selected case study.",
+      "html": "<a class=\"ds-project\" href=\"#\"><span>01</span><strong>WAVE</strong></a>",
+      "css": ".ds-project { position:relative; display:block; min-height:220px; padding:1.2rem; overflow:hidden; background:#dfff38; color:#143d84; font-family:Arial,sans-serif; font-weight:900; text-decoration:none; transition:transform .35s cubic-bezier(.22,1,.36,1); } .ds-project strong { position:absolute; right:.04em; bottom:-.16em; font-size:5rem; line-height:.72; letter-spacing:-.08em; } .ds-project:hover { transform:translateY(-.65rem) rotate(1deg); } .ds-project:focus-visible { outline:3px solid #143d84; outline-offset:5px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Blue Sticker Poster",
+    "overview": "A cool-paper portfolio rebuilt directly from the supplied SVG template. Paper texture, pale SWL lettering, a central dimensional sticker, blue rails, and exact editorial placement keep the supplied composition ahead of interface chrome.",
+    "keyCharacteristics": ["Committed cobalt-and-paper palette", "Supplied oversized SWL layer", "Three-layer SVG composition", "Reduced-motion safe animation"],
+    "rules": [
+      { "name": "The One-Signal Rule", "body": "Lime only marks something actionable or moving; it does not become a general decoration.", "section": "colors" },
+      { "name": "The Poster-Then-Reading Rule", "body": "A section gets one dominant display statement; supporting text remains intentionally small and plain.", "section": "typography" }
+    ],
+    "dos": ["Do keep the supplied blue-and-white artwork intact and in the visual lead.", "Do use transforms and opacity for interactive movement and respect reduced motion."],
+    "donts": ["Don't replace the hero with a generic grid of matching project cards.", "Don't fabricate personal details, client histories, or project outcomes before they are supplied."]
+  }
+}
